@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addition(a,b,callback){
+            let result = a+b;
+            document.write("<br>Result : "+result);
+            callback(result);
+        }
+        addition (20,11,function(n){
+            n%2 ? document.write("<br>odd") : document.write("<br>Even");
+        });
+        </script>
+</body>
+</html>
