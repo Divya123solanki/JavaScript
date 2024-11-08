@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            document.write("<br>f1-executed...");
+        }
+
+        const f2 = function(){
+            document.write("<br>f2-executes...");
+        }
+
+        const f3 = ()=>{
+            document.write("<br>f3-executed...");
+        }
+
+        f1();
+        f2();
+        f3();
+        (function(){
+            document.write("IIFE executed...");
+        }())
+        </script>
+</body>
+</html>
