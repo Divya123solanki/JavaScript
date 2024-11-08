@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(a,b,c){
+            document.write("<br>a : "+a);
+            document.write("<br>a : "+b);
+            document.write("<br>a : "+c);
+            document.write("<br>f1-executed...<br>");
+            return 2000;
+        }
+        function f1(a,b,c){
+            document.write("<br>a : "+a);
+            document.write("<br>a : "+b);
+            document.write("<br>a : "+c);
+            document.write("<br>f1-executed...<br>");
+            return 3000;
+
+        }
+        let result = f1(1,2,3,4);
+        document.write(result);
+        </script>
+</body>
+</html>
