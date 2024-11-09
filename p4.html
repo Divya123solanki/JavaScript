@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,3,4,5,6,7,8,9];
+        arr.filter((element)=>{return element%2==0}).map((element,index)=>{
+             document.write("<br>"+element);
+        })
+        document.write("<hr/>");
+        var arr = [10,20,25,15,35,65,70];
+        var element = arr.find((element)=>{return element == 155});
+        if(element)
+        document.write("Element found");
+    else
+    document.write("Element Not found");
+document.write("<hr/>");
+
+var status = arr.some((element)=>{return element==155});
+document.write(status);
+        </script>
+</body>
+</html>
