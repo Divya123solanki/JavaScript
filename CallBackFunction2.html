@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(a,b,callbackFirst, callbackSecond){
+            var result = a+b;
+            document.write("<br>Addition:"+result);
+            callbackFirst(result);
+            callbackSecond(result);
+        }
+        f1(-20,11,function(x){
+            x%2 ? document.write("<br>Odd"):document.write("<br>Even");
+        }, function(x){
+            if(x>0)
+            document.write("<br>Positive Result");
+        else if(x<0)
+        document.write("<br>Negative Result");
+    else{
+        document.write("<br>Neutral result");
+    }
+        });
+        </script>
+</body>
+</html>
