@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[10,20,30,40,50];
+        let temp=a[0];
+        for(var i=1;i<a.length;i++){
+           
+           a[i-1]=a[i];
+        }
+            a[a.length-1]=temp;
+          
+            console.log(a);//20,30,40,50,10
+        
+        </script>
+</body>
+</html>
